@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Computer Networks</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:rgb(80,120,200);
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+/* Style the footer */
+footer {
+  background-color: #6588CE;
+  position: absolute;
+  padding: 10px;
+  bottom: 10px;
+  width: 98%;
+  text-align: center;
+  color: white;
+}
+.custombutton{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.custombutton:hover{   
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+</style>
+
+<script type="text/javascript">
+    function load_second() {
+     document.getElementById("content").innerHTML='<object type="text/html" data="second.html" ></object>';
+
+    }
+</script>
+</head>
+<body>
+<basefont face = "verdana, sans-serif">
+<header>
+  <h2>Error Detection Technique - Checksum</h2>
+</header>
+
+<div id="content" style="height: 70%; overflow: auto;padding: 15px 15px;">
+<div >
+<h3>Checksums</h3>
+This is a block code method where a checksum is created based on the data values in the data blocks to be transmitted using some algorithm and appended to the data. When the receiver gets this data, a new checksum is calculated and compared with the existing checksum. A non-match indicates an error.
+ <h3>Error Detection by Checksums</h3>
+
+For error detection by checksums, data is divided into fixed sized frames or segments.
+<br><br>
+<b>Sender’s End</b> − The sender adds the segments using 1’s complement arithmetic to get the sum. It then complements the sum to get the checksum and sends it along with the data frames.
+<br><br>
+<b>Receiver’s End </b>− The receiver adds the incoming segments along with the checksum using 1’s complement arithmetic to get the sum and then complements it.
+<br>
+If the result is zero, the received frames are accepted; otherwise they are discarded.
+<br>
+</div>
+<div style="position: relative;">
+    <button class="custombutton" id="custombutton" style="float:right" onclick="load_second()">Next</button>
+</div>
+</div>
+
+<footer>
+  <p><b>Team:</b> Abinash S, Ajay R, Arul Prasath V, Anusruti D, Dhanvarsha S</p>
+</footer>
+</basefont>
+</body>
+</html>
