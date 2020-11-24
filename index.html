@@ -3,7 +3,7 @@
 <head>
 <title>Computer Networks</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
   box-sizing: border-box;
@@ -20,12 +20,14 @@ header {
   text-align: center;
   font-size: 25px;
   color: white;
+  width: 98%;
+  position: fixed;
 }
 
 /* Style the footer */
 footer {
   background-color: #6588CE;
-  position: absolute;
+  position: fixed;
   padding: 10px;
   bottom: 10px;
   width: 98%;
@@ -61,31 +63,28 @@ footer {
 <body>
 <basefont face = "verdana, sans-serif">
 <header>
-  <h2>Error Detection Technique - Checksum</h2>
+  <h2>*TOPIC*</h2>
 </header>
 
-<div id="content" style="height: 70%; overflow: auto;padding: 15px 15px;">
-<div >
-<h3>Checksums</h3>
-This is a block code method where a checksum is created based on the data values in the data blocks to be transmitted using some algorithm and appended to the data. When the receiver gets this data, a new checksum is calculated and compared with the existing checksum. A non-match indicates an error.
- <h3>Error Detection by Checksums</h3>
+<div id="content" style="height:50%; overflow-x: auto;padding-top: 10%;padding-left: 10px;padding-right:10px;">
+<div>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-For error detection by checksums, data is divided into fixed sized frames or segments.
-<br><br>
-<b>Sender’s End</b> − The sender adds the segments using 1’s complement arithmetic to get the sum. It then complements the sum to get the checksum and sends it along with the data frames.
-<br><br>
-<b>Receiver’s End </b>− The receiver adds the incoming segments along with the checksum using 1’s complement arithmetic to get the sum and then complements it.
-<br>
-If the result is zero, the received frames are accepted; otherwise they are discarded.
-<br>
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 </div>
-<div style="position: relative;">
+<div style="position:relative; padding-bottom: 10px;">
     <button class="custombutton" id="custombutton" style="float:right" onclick="load_second()">Next</button>
 </div>
 </div>
 
 <footer>
-  <p><b>Team:</b> Abinash S, Ajay R, Arul Prasath V, Anusruti D, Dhanvarsha S</p>
+  <p><b>Team:</b> *Team Members Name*</p>
 </footer>
 </basefont>
 </body>
